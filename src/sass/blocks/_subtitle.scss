@@ -1,0 +1,47 @@
+.subtitle {
+	display: flex;
+	align-items: center;
+	min-height: 98px;
+	img {
+		display: block;
+		width: 30px;
+		height: 30px;
+		object-fit: contain;
+		margin-right: 8px;
+	}
+	&__text {
+		font-weight: 700;
+		font-size: 36px;
+		line-height: 49px;
+		color: var(--text-color-main);
+		margin-right: 16px;
+	}
+	hr {
+		width: 300px;
+		height: 1px;
+		background: #000;
+	}
+	&__title {
+		font-weight: 800;
+		font-size: 72px;
+		line-height: 98px;
+		text-align: right;
+		color: rgba(34, 34, 34, 0.1);
+		text-transform: uppercase;
+	}
+	&__works {
+		hr {
+			width: 60px;
+		}
+	}
+	&__categories {
+		hr {
+			width: 190px;
+		}
+	}
+	&__testimony {
+		hr {
+			width: 230px;
+		}
+	}
+}

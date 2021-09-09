@@ -1,0 +1,106 @@
+.hamburger {
+	position: absolute;
+	top: 20px;
+	right: 20px;
+	height: 21px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	cursor: pointer;
+	z-index: 10;
+	span {
+		display: none;
+		width: 30px;
+		height: 3px;
+		background: var(--text-color-main);
+	}
+}
+
+.menu {
+	position: fixed;
+	top: 0;
+	left: -100%;
+	width: 100%;
+	height: 100vh;
+	z-index: 20;
+	visibility: hidden;
+	opacity: 0;
+	transition: 0.6s all;
+	&.active {
+		left: 0;
+		visibility: visible;
+		opacity: 1;
+	}
+	&__block {
+		position: relative;
+		width: 25%;
+		height: 100%;
+		padding-top: 140px;
+		padding-left: 75px;
+		background-color: rgba($color: #f7dea6, $alpha: 1.0);
+		transition: 0.6s all;
+		z-index: 10;
+	}
+	&__close {
+		position: absolute;
+		top: 25px;
+		right: 25px;
+		font-size: 25px;
+		color: var(--text-color-main);
+		cursor: pointer;
+		transition: 0.3s all;
+		&:hover {
+			color: rgba($color: #fff, $alpha: 1.0);
+			text-shadow: 0px 0px 15px  rgba($color: #000, $alpha: 1.0);
+		}
+	}
+	&__link {
+		position: relative;
+		font-weight: 700;
+		font-size: 24px;
+		line-height: 36px;
+		margin-bottom: 15px;
+		&:last-child {
+			margin-bottom: 0;
+		}
+		a {
+			color: var(--text-color-main);
+			transition: 0.3s all;
+			&:hover {
+				color: rgba($color: #fff, $alpha: 1.0);
+				text-shadow: 0px 0px 15px  rgba($color: #000, $alpha: 1.0);
+			}
+		}
+	}
+	&__overlay {
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background-color: rgba($color: #000, $alpha: .6);
+	}
+	&__contacts {
+		position: absolute;
+		bottom: 25px;
+		font-weight: 400;
+		font-size: 14px;
+		line-height: 25px;
+		span {
+			display: block;
+			font-weight: 800;
+		}
+		li {
+			font-weight: 600;
+		}
+		a {
+			font-weight: 400;
+			color: #8d8d8d;
+			transition: 0.3s all;
+			&:hover {
+				color: var(--text-color-main);
+				font-weight: 800;
+			}
+		}
+	}
+}

@@ -1,0 +1,26 @@
+.btn-g {
+	display: block;
+	padding: 14px 24px;
+	background: var(--text-color-gold);
+	border-radius: 4px;
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 22px;
+	color: #ffffff;
+	text-align: center;
+	&__works {
+		margin: 64px auto 0;
+	}
+	&__subscribe {
+		padding: 9px 24px;
+		font-weight: 600;
+		border-radius: 0;
+	}
+	&__mwr {
+		margin: 20px auto 0;
+		font-size: 14px;
+		letter-spacing: 1.5px;
+		text-transform: uppercase;
+		padding: 10px 25px;
+	}
+}

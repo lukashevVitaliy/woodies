@@ -1,0 +1,11 @@
+{
+  "request": [
+    {
+      "name": "tester",
+      "email": "tester@yandex.ru",
+      "userpass1": "12345678",
+      "userpass2": "12345678",
+      "id": 1
+    }
+  ]
+}

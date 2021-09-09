@@ -1,0 +1,29 @@
+.btn {
+	display: block;
+	padding: 9px 35px;
+	background: #f9bdbd;
+	border: 1px solid var(--text-color-main);
+	border-radius: 8px;
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 22px;
+	color: var(--text-color-main);
+	
+	&__pink,
+	&__beige,
+	&__blue {
+		position: absolute;
+		bottom: 24px;
+		right: 16px;
+		padding: 8px 19px;
+	}
+		
+	&__pink {
+	}
+	&__beige {
+		background: #f7dea6;
+	}
+	&__blue {
+		background: #a8dcec;
+	}
+}

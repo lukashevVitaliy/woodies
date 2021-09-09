@@ -1,0 +1,51 @@
+@import "libs/nullstyles";
+@import url(https://fonts.googleapis.com/css?family=Nunito:400,600,700,800);
+@import "https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.3/tiny-slider.css";
+
+
+@import "base/variables";
+@import "base/mixins";
+
+*{
+	font-family: 'Nunito', sans-serif;
+}
+html {
+	scroll-behavior: smooth;
+}
+.container {
+	width: 950px;
+	margin: 0 auto;
+}
+.error {
+	display: block;
+	padding: 0px 20px;
+	font-size: 11px;
+	font-weight: 400;
+	color: red;
+}
+label.error {
+	margin-top: 10px;
+	border: none;
+}
+
+
+
+@import "blocks/main";
+@import "blocks/btn";
+@import "blocks/btn-g";
+@import "blocks/title";
+@import "blocks/about";
+@import "blocks/subtitle";
+@import "blocks/works";
+@import "blocks/categories";
+@import "blocks/testimony";
+@import "blocks/subscribe";
+@import "blocks/footer";
+@import "blocks/menu";
+@import "blocks/pageUp";
+@import "blocks/modal";
+
+@import "blocks/media";
+
+
+
